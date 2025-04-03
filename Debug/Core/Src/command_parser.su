@@ -1,0 +1,3 @@
+../Core/Src/command_parser.c:51:9:hb	16	static
+../Core/Src/command_parser.c:53:9:lb	16	static
+../Core/Src/command_parser.c:56:6:ParseCommand	136	static

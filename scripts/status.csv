@@ -1,0 +1,22 @@
+Status,SYMBOL,Client Message,Expected Server Response
+10,GET_POSITION,Get position,"10 OK  { azm: uint16_t, elv: uint16_t }"
+11,MOVE_AZM_BY,Move azm by amount,20 OK
+12,MOVE_AZM_TO,Move azm to amount,20 OK
+13,MOVE_ELV_BY,Move elv by amount,20 OK
+14,MOVE_ELV_TO,Move elv to amount,20 OK
+15,MOVE_TO,"Move to azm, elv",20 OK
+20,GET_SPEED,Get speed,"10 OK  { azm: uint16_t, elv: uint16_t }"
+21,SET_AZM_SPEED,Set azm speed to amount,20 OK
+22,SET_ELV_SPEED,Set elv speed to amount,20 OK
+23,SET_SPEED,Set both speed to amount,20 OK
+24,DANCE,Dance,20 OK
+40,SET_AZM_TOOTH,Set azm tooth reatio,
+41,GET_AZM_TOOTH,Get azm tooth ratio,20 OK / 10 OK { azm: float16 }
+42,SET_ELV_TOOTH,Set elv tooth ratio,
+43,GET_ELV_TOOTH,Get elv tooth ratio,20 OK / 10 OK { elv: float16 }
+50,SET_AZM_STEP,Set azm microstep (pulse/rev),
+51,GET_AZM_STEP,Get azm microstep (pulse/rev),20 OK /
+52,SET_ELV_STEP,Set elv microstop (pulse/rev),
+53,GET_ELV_STEP,Get elv microstep (pulse/rev),20 OK
+0,READY,Ready?,20 OK or 30 BUSY
+1,CALIBRATE,Calibrate,20 OK
