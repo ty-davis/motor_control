@@ -49,8 +49,9 @@ enum response
 
 
 uint8_t hb(uint16_t val) { return (uint8_t)((val >> 8) & 0xFF); }
-
 uint8_t lb(uint16_t val) { return (uint8_t)(val & 0xFF); }
+
+
 
 
 void ParseCommand(uint8_t *message, uint8_t length) {
@@ -89,6 +90,11 @@ void ParseCommand(uint8_t *message, uint8_t length) {
 			response[3] = hb(elv_motor_state.motor_position);
 			response[4] = lb(elv_motor_state.motor_position);
 			response_len = 5;
+			break;
+		case MOVE_AZM_BY:
+			move_motor_by((int16_t)((message[3] << 8) | message[4]), &azm_motor_state);
+			response[0] = OK;
+			response_len = 1;
 			break;
 		case GET_SPEED: // TODO: FINISH
 			response[0] = OK_PAYLOAD;

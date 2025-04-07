@@ -14,7 +14,8 @@ MotorState azm_motor_state = {
     .motor_direction = 0,
     .motor_pulse_rev = 800,
     .tooth_ratio = 11875,
-    .motor_position = 0
+    .motor_position = 0,
+	.htim = &htim21
 };
 
 MotorState elv_motor_state = {
@@ -23,5 +24,6 @@ MotorState elv_motor_state = {
     .motor_direction = 0,
     .motor_pulse_rev = 800,
     .tooth_ratio = 1200,
-    .motor_position = 0
+    .motor_position = 0,
+	.htim = &htim22
 };

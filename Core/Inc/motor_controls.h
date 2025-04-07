@@ -9,6 +9,7 @@
 #define INC_MOTOR_CONTROLS_H_
 
 #include "stm32l0xx_hal.h"
+#include "system_state.h"
 
 // azimuth motor
 #define AZM_PUL_PORT  GPIOA
@@ -29,6 +30,8 @@
 
 #define ELV_EN_PORT   GPIOA
 #define ELV_EN_PIN    GPIO_PIN_10
+
+uint8_t move_motor_by(uint16_t, MotorState*);
 
 
 
