@@ -23,7 +23,7 @@ MotorState elv_motor_state = {
     .motor_count = 0,
     .motor_direction = 0,
     .motor_pulse_rev = 800,
-    .tooth_ratio = 1200,
+    .tooth_ratio = 3000,
     .motor_position = 0,
 	.htim = &htim22
 };
