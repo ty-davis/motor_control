@@ -10,7 +10,7 @@ Status,SYMBOL,Client Message,Expected Server Response
 22,SET_ELV_SPEED,Set elv speed to amount,20 OK
 23,SET_SPEED,Set both speed to amount,20 OK
 24,DANCE,Dance,20 OK
-40,SET_AZM_TOOTH,Set azm tooth reatio,
+40,SET_AZM_TOOTH,Set azm tooth ratio,
 41,GET_AZM_TOOTH,Get azm tooth ratio,20 OK / 10 OK { azm: float16 }
 42,SET_ELV_TOOTH,Set elv tooth ratio,
 43,GET_ELV_TOOTH,Get elv tooth ratio,20 OK / 10 OK { elv: float16 }

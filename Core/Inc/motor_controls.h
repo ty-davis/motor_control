@@ -31,7 +31,8 @@
 #define ELV_EN_PORT   GPIOA
 #define ELV_EN_PIN    GPIO_PIN_10
 
-uint8_t move_motor_by(uint16_t, MotorState*);
+uint8_t move_motor_by(int16_t, MotorState*);
+void dance();
 
 
 

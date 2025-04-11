@@ -29,7 +29,8 @@ Core/Src/motor_controls.o: ../Core/Src/motor_controls.c \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_tim_ex.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h \
- ../Core/Inc/stm32l0xx_it.h
+ ../Core/Inc/system_state.h ../Core/Inc/stm32l0xx_it.h \
+ ../Core/Inc/system_state.h
 ../Core/Inc/motor_controls.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:
 ../Core/Inc/stm32l0xx_hal_conf.h:
@@ -60,4 +61,6 @@ Core/Src/motor_controls.o: ../Core/Src/motor_controls.c \
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_tim_ex.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h:
+../Core/Inc/system_state.h:
 ../Core/Inc/stm32l0xx_it.h:
+../Core/Inc/system_state.h:

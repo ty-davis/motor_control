@@ -188,7 +188,7 @@ static void MX_TIM21_Init(void)
   htim21.Instance = TIM21;
   htim21.Init.Prescaler = 9;
   htim21.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim21.Init.Period = 5000;
+  htim21.Init.Period = 2500;
   htim21.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim21.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim21) != HAL_OK)

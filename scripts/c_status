@@ -25,9 +25,10 @@ enum status
 
 enum response
 {
-    OK_PAYLOAD = 16,   // 0x10
-    OK = 32,           // 0x20
-    BUSY = 48,         // 0x30
-    BAD_REQUEST = 64,  // 0x40
-    INTL_ERROR = 80,   // 0x50
+    OK_PAYLOAD = 16,    // 0x10
+    OK = 32,            // 0x20
+    BUSY = 48,          // 0x30
+    BAD_REQUEST = 64,   // 0x40
+    BAD_STEP_VAL = 65,  // 0x41
+    INTL_ERROR = 80,    // 0x50
 };
